@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+<style>   
+Body {  
+  font-family:timesnewroman, sans-serif;  
+
+}  
+.option {   
+	    border-radius: 30px; 
+        background-color:lightgreen;   
+        width: 70%;  
+        color: orange;   
+        padding: 25px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ 
+        
+</style>   
+</head>
+<body>
+	<div class="option">
+<h3 style ="color: blue;">1.How many letters in English Alpahabtes?</h3><br>
+<h4 style ="color: red;" >
+<input type="radio" name="question1" id="correct1">26 
+<input type="radio" name="question1">23 
+<input type="radio" name="question1">29
+<input type="radio" name="question1">27
+</h4>
+
+<h3 style="color:blue;" >2.How many vowels?</h3><br>
+<h4 style ="color: red;">
+<input type="radio" name="question2" >2 
+<input type="radio" name="question2">8 
+<input type="radio" name="question2" id="correct2">5 
+<input type="radio" name="question2">6
+</h4>
+
+<h3 style ="color: blue;">3.How many consonant?</h3><br>
+<h4 style ="color: red;">
+<input type="radio" name="question3" >15
+<input type="radio" name="question3"id="correct3">21
+<input type="radio" name="question3">16 
+<input type="radio" name="question3">19 
+</h4>
+
+<h3 style ="color:blue;">4.what is our National Animal?</h3><br>
+<h4 style ="color: red;">
+<input type="radio" name="question3" >Lion
+<input type="radio" name="question3"id="correct4">Tiger
+<input type="radio" name="question3">Elephant
+<input type="radio" name="question3">Deer
+</h4>
+
+<h3 style="color:blue;">5.What is our National Bird?</h3><br>
+<h4 style ="color: red;">
+<input type="radio" name="question3" >Dove 
+<input type="radio" name="question3"id="correct5">Peacock
+<input type="radio" name="question3">Crow
+<input type="radio" name="question3">Parrot
+</h4>
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()"><br>
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+		if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+		if(document.getElementById('correct5').checked)
+		{	score++;
+		}
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>  
+<a href="final.html">LOGIN </a>
+</html>
